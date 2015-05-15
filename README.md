@@ -15,6 +15,7 @@ ES6 to show a tileset of gifs from reddit.
 * once jspm is in your PATH, `jspm init` and hit enter a lot to set up jspm
   autoloading for your packages and importing other packages. This will create
   a `config.js` and `jspm_packages` in the root.
+* if you are requiring react jsx, the easiest way so far is to `jspm install jsx`. Then when you require jsx, do `require('MyComponent.jsx!')` with the !. [Anyther way here](https://github.com/jspm/jspm-cli/issues/566#issuecomment-90279491).
 * pull in this javascript in your html page:
 
 ```html
