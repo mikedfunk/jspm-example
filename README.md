@@ -57,3 +57,11 @@ require('./my-js-file');
 ```javascript
 <script type="text/javascript" src="jspm_packages/traceur-runtime.js"></script>
 ```
+
+## Gotchas
+
+I've also had problems with PhantomJS and JSPM. The PhantomJS browser crashes
+when it encounters JSPM. I just run it in a real browser instead. Apparently
+PhantomJS uses an old version of webkit that does not work with Traceur and 
+probably Babel either. [Github issue
+here](https://github.com/google/traceur-compiler/issues/908).
